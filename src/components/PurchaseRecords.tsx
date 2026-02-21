@@ -72,7 +72,7 @@ export const PurchaseRecords: React.FC = () => {
                     {records.map((item) => (
                         <div key={item.id} className="group bg-white border border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-lg overflow-hidden flex flex-col">
                             {/* Image Area */}
-                            <div className="relative h-64 overflow-hidden bg-gray-100">
+                            <div className="relative h-48 overflow-hidden bg-gray-100">
                                 <img 
                                     src={item.image} 
                                     alt={item.name} 
