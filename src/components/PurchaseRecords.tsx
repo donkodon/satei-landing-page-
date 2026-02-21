@@ -68,42 +68,42 @@ export const PurchaseRecords: React.FC = () => {
                     他社の査定額にご満足いただけなかった方も、ぜひ一度ご相談ください。
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                     {records.map((item) => (
-                        <div key={item.id} className="group bg-white border border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-lg overflow-hidden flex flex-col">
+                        <div key={item.id} className="group bg-white border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 rounded-md overflow-hidden flex flex-col">
                             {/* Image Area */}
-                            <div className="relative h-24 overflow-hidden bg-gray-100">
+                            <div className="relative h-32 overflow-hidden bg-gray-100">
                                 <img 
                                     src={item.image} 
                                     alt={item.name} 
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute top-4 left-4 bg-brand-black text-white text-xs font-bold px-3 py-1 tracking-widest uppercase">
+                                <div className="absolute top-2 left-2 bg-brand-black text-white text-[10px] font-bold px-2 py-0.5 tracking-wider uppercase">
                                     {item.category}
                                 </div>
                                 {item.diff && (
-                                    <div className="absolute top-4 right-4 bg-brand-gold text-brand-black text-xs font-bold px-3 py-1 flex items-center gap-1 shadow-lg animate-pulse">
-                                        <TrendingUp size={12} />
+                                    <div className="absolute top-2 right-2 bg-brand-gold text-brand-black text-[10px] font-bold px-2 py-0.5 flex items-center gap-0.5 shadow-lg animate-pulse">
+                                        <TrendingUp size={10} />
                                         {item.diff}
                                     </div>
                                 )}
                             </div>
 
                             {/* Content */}
-                            <div className="p-6 flex-1 flex flex-col">
+                            <div className="p-3 flex-1 flex flex-col">
                                 <div className="mb-2">
-                                    <h4 className="text-brand-gold font-bold text-sm uppercase tracking-wide mb-1">{item.brand}</h4>
-                                    <h3 className="font-medium text-gray-800 line-clamp-2 min-h-[3rem]">{item.name}</h3>
+                                    <h4 className="text-brand-gold font-bold text-[10px] uppercase tracking-wide mb-0.5">{item.brand}</h4>
+                                    <h3 className="font-medium text-gray-800 text-xs line-clamp-2 min-h-[2rem]">{item.name}</h3>
                                 </div>
                                 
-                                <div className="mt-auto pt-4 border-t border-gray-100">
+                                <div className="mt-auto pt-2 border-t border-gray-100">
                                     <div className="flex items-end justify-between">
-                                        <span className="text-xs text-gray-400 font-bold">買取参考価格</span>
+                                        <span className="text-[9px] text-gray-400 font-bold">買取参考価格</span>
                                         <div className="text-right">
-                                            <span className="text-2xl font-serif font-bold text-brand-black group-hover:text-brand-gold transition-colors">
+                                            <span className="text-sm font-bold text-brand-black group-hover:text-brand-gold transition-colors">
                                                 ¥{item.price}
                                             </span>
-                                            <span className="text-xs text-gray-400 ml-1">-</span>
+                                            <span className="text-[9px] text-gray-400 ml-0.5">-</span>
                                         </div>
                                     </div>
                                 </div>
