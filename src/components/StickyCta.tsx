@@ -8,7 +8,7 @@ export const StickyCta: React.FC = () => {
                 <Phone size={20} className="mb-1" />
                 <span className="text-xs font-bold">電話する</span>
             </a>
-            <a href="#" className="flex-[2] bg-[#06C755] text-white flex items-center justify-center gap-2 py-3">
+            <a href="https://lin.ee/XfikMs1" target="_blank" rel="noopener noreferrer" className="flex-[2] bg-[#06C755] text-white flex items-center justify-center gap-2 py-3">
                 <MessageCircle size={24} className="fill-current" />
                 <div className="text-left leading-tight">
                     <span className="block text-[10px] opacity-90">最短5分！</span>

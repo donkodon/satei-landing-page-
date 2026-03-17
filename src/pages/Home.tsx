@@ -47,9 +47,9 @@ const Home: React.FC = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                             <div className="h-96 relative rounded-lg overflow-hidden shadow-2xl">
                                 <img 
-                                    src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&q=80&w=1200" 
-                                    alt="Concierge Service" 
-                                    className="w-full h-full object-cover"
+                                    src="/images/why-relight.png" 
+                                    alt="高価買取ができる理由" 
+                                    className="w-full h-full object-contain bg-white"
                                 />
                             </div>
                             <div>

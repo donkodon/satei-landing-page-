@@ -34,12 +34,12 @@ export const Hero: React.FC = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="group relative px-8 py-4 bg-brand-gold text-brand-black font-bold uppercase tracking-widest overflow-hidden transition-all hover:bg-white">
+                        <a href="https://lin.ee/XfikMs1" target="_blank" rel="noopener noreferrer" className="group relative px-8 py-4 bg-brand-gold text-brand-black font-bold uppercase tracking-widest overflow-hidden transition-all hover:bg-white inline-flex items-center justify-center">
                             <span className="relative z-10 flex items-center gap-2">
                                 無料査定を申し込む
                                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                             </span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

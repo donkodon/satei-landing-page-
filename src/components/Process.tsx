@@ -61,8 +61,16 @@ export const Process: React.FC = () => {
                                 ))}
                             </div>
                             
-                            {method.title === "宅配買取" ? (
+                            {method.title === "LINE査定" ? (
+                                <a href="https://lin.ee/XfikMs1" target="_blank" rel="noopener noreferrer" className="mt-8 w-full py-3 border border-brand-black text-brand-black text-sm font-bold uppercase tracking-widest hover:bg-brand-black hover:text-white transition-colors block text-center">
+                                    詳細を見る
+                                </a>
+                            ) : method.title === "宅配買取" ? (
                                 <Link to="/delivery-purchase" className="mt-8 w-full py-3 border border-brand-black text-brand-black text-sm font-bold uppercase tracking-widest hover:bg-brand-black hover:text-white transition-colors block text-center">
+                                    詳細を見る
+                                </Link>
+                            ) : method.title === "出張買取" ? (
+                                <Link to="/visit-purchase" className="mt-8 w-full py-3 border border-brand-black text-brand-black text-sm font-bold uppercase tracking-widest hover:bg-brand-black hover:text-white transition-colors block text-center">
                                     詳細を見る
                                 </Link>
                             ) : (
